@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+const k = 373.2
+
+func main() {
+	var c = k - 273.2
+	fmt.Printf("A temperatura de ebulicao da agua em Kelvin = %g e a temperatura de ebulicao em Celsius = %g", k, c)
+
+}
