@@ -1,0 +1,23 @@
+//Desafio proposto com a intenção de relembrar um jogo antigo, onde, ao imvés de mostrar os multiplos de 3, e mostrada a mensagem PIN,  nos múltiplos de 5, é mostrada a mensagem PAN
+
+package main
+
+import "fmt"
+
+func main() {
+	contador(100)
+}
+
+func contador(count int) {
+	for i := 1; i < count; i++ {
+		if i%3 == 0 {
+			fmt.Println("Pin")
+		} else {
+			if i%5 == 0 {
+				fmt.Println("Pan")
+			} else {
+				fmt.Println(i)
+			}
+		}
+	}
+}
